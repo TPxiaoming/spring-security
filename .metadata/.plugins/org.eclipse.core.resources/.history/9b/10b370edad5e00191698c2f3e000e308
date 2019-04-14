@@ -1,0 +1,12 @@
+/**
+ * 
+ */
+package com.xiaoming.dto;
+
+/**
+ * @author 江小明
+ *
+ */
+public class User {
+
+}

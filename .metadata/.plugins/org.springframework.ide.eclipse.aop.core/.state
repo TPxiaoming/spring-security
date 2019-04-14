@@ -1,2 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<aop-reference-model/>
+<aop-reference-model>
+<aop-project name="xiaoming-security-app"/>
+<aop-project name="xiaoming-security-browser"/>
+<aop-project name="xiaoming-security-core"/>
+<aop-project name="xiaoming-security-demo"/>
+</aop-reference-model>
