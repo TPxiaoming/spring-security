@@ -41,7 +41,7 @@ public class UserControllerTest {
 	@Test
 	public void  whenQuerySuccess() throws Exception {
 		//perform执行	
-		mockMvc.perform(get("/user")//伪造请求
+		String result = mockMvc.perform(get("/user")//伪造请求
 				.param("username", "xiaoming")
 				.param("age", "18")
 				.param("xxx", "yyy")
@@ -51,6 +51,30 @@ public class UserControllerTest {
 //				.param("sort", "age,desc")	//排序
 				.contentType(MediaType.APPLICATION_JSON_UTF8))//参数格式为UTF8
 				.andExpect(status().isOk()) //期望 状态是OK
-				.andExpect(jsonPath("$.length()").value(3));//返回的json内容 是个集合长度为3
+				.andExpect(jsonPath("$.length()").value(3))//返回的json内容 是个集合长度为3
+				.andReturn().getResponse().getContentAsString();//将相应结果返回成json字符串的形式
+		System.out.println(result);
 	}	
+	
+	@Test
+	public void whenGetInfoSuccess() throws Exception {
+		String result = mockMvc.perform(get("/user/1")
+				.contentType(MediaType.APPLICATION_JSON_UTF8))
+		.andExpect(status().isOk())
+		.andExpect(jsonPath("$.username").value("tom"))
+		.andReturn().getResponse().getContentAsString();//将相应结果返回成json字符串的形式;
+		System.out.println(result);
+	}
+	
+	@Test
+	public void whenGetInfoFail() {
+		try {
+			mockMvc.perform(get("/user/a")
+					.contentType(MediaType.APPLICATION_JSON_UTF8))
+			.andExpect(status().is4xxClientError());
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
 }
