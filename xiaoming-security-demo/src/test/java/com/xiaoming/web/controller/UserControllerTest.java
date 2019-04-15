@@ -4,8 +4,11 @@
 package com.xiaoming.web.controller;
 
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
+
+import java.util.Date;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -76,5 +79,18 @@ public class UserControllerTest {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+	}
+	
+	@Test
+	public void whenCreateSuccess() throws Exception {
+		Date date = new Date();
+		System.out.println(date.getTime());
+		String content = "{\"username\":\"tom\",\"password\":null,\"birth\":"+date.getTime()+"}";
+		String result = mockMvc.perform(post("/user").contentType(MediaType.APPLICATION_JSON_UTF8)
+				.content(content))
+		.andExpect(status().isOk())
+		.andExpect(jsonPath("$.id").value("1"))
+		.andReturn().getResponse().getContentAsString();
+		System.out.println(result);
 	}
 }

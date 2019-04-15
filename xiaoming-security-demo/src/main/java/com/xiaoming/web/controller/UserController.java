@@ -6,12 +6,17 @@ package com.xiaoming.web.controller;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.validation.Valid;
+
 import org.apache.commons.lang.builder.ReflectionToStringBuilder;
 import org.apache.commons.lang.builder.ToStringStyle;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.web.PageableDefault;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
@@ -27,6 +32,21 @@ import com.xiaoming.dto.UserQueryCondition;
 @RestController
 @RequestMapping("/user")
 public class UserController {
+	
+	@PostMapping
+	public User create(@Valid @RequestBody User user, BindingResult errors) {
+		if(errors.hasErrors()) {
+			errors.getAllErrors().stream().forEach(error -> System.out.println(error.getDefaultMessage()));
+		}
+		
+		System.out.println(user.getUsername());
+		System.out.println(user.getPassword());
+		System.out.println(user.getId());
+		System.out.println(user.getBirth());
+		
+		user.setId("1");
+		return user;
+	}
 
 //	@RequestMapping(value = "/user", method = RequestMethod.GET)
 	@GetMapping
