@@ -1,0 +1,5 @@
+package com.xiaoming.service;
+
+public interface HelloService {
+
+}

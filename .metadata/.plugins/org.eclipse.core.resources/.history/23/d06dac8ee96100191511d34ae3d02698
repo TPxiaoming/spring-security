@@ -1,0 +1,7 @@
+package com.xiaoming.validator;
+
+import javax.validation.ConstraintValidator;
+
+public class MyConstraintValidator implements ConstraintValidator<A, T> {
+
+}

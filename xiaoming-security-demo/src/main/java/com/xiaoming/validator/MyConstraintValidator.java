@@ -1,0 +1,35 @@
+package com.xiaoming.validator;
+
+import javax.validation.ConstraintValidator;
+import javax.validation.ConstraintValidatorContext;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.xiaoming.service.HelloService;
+/**
+ * 
+ * @author 江小明
+ *<MyConstraint, Object> MyConstraint要验证的注解 Object标注的类型
+ */
+public class MyConstraintValidator implements ConstraintValidator<MyConstraint, Object> {
+
+	//可以注入服务
+	@Autowired
+	private HelloService helloService;
+	
+	//初始化
+	@Override
+	public void initialize(MyConstraint constraintAnnotation) {
+		System.out.println("my validator init");
+	}
+
+	//验证 进行业务逻辑处理
+	@Override
+	public boolean isValid(Object value, ConstraintValidatorContext context) {
+		helloService.greeting("xiaoming");
+		System.out.println(value);
+		//true 代表校验成功
+		return false;
+	}
+
+}
