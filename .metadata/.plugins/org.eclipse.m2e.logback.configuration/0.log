@@ -3345,3 +3345,134 @@ org.eclipse.core.runtime.CoreException: Could not resolve artifact org.springfra
 2019-04-18 23:06:15,663 [Worker-12: Launching UserControllerTest.whenDeleteSuccess] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
 2019-04-18 23:06:15,788 [Worker-12: Launching UserControllerTest.whenDeleteSuccess] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/xiaoming-security-browser: com.xiaoming.security:xiaoming-security-browser:1.0.0-SNAPSHOT with classifier null to /xiaoming-security-browser/target/classes
 2019-04-18 23:06:15,789 [Worker-12: Launching UserControllerTest.whenDeleteSuccess] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/xiaoming-security-core: com.xiaoming.security:xiaoming-security-core:1.0.0-SNAPSHOT with classifier null to /xiaoming-security-core/target/classes
+2019-04-21 22:02:53,056 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2019-04-21 22:04:40,276 [Worker-1: Check for devtools] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/xiaoming-security-browser: com.xiaoming.security:xiaoming-security-browser:1.0.0-SNAPSHOT with classifier  to /xiaoming-security-browser/target/classes
+2019-04-21 22:04:40,281 [Worker-1: Check for devtools] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/xiaoming-security-core: com.xiaoming.security:xiaoming-security-core:1.0.0-SNAPSHOT with classifier  to /xiaoming-security-core/target/classes
+2019-04-21 22:04:45,874 [Worker-7: Launching xiaoming-security-demo - DemoApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/xiaoming-security-browser: com.xiaoming.security:xiaoming-security-browser:1.0.0-SNAPSHOT with classifier null to /xiaoming-security-browser/target/classes
+2019-04-21 22:04:45,875 [Worker-7: Launching xiaoming-security-demo - DemoApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/xiaoming-security-core: com.xiaoming.security:xiaoming-security-core:1.0.0-SNAPSHOT with classifier null to /xiaoming-security-core/target/classes
+2019-04-21 22:22:05,325 [Worker-18: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2019-04-21 22:22:05,337 [Worker-18: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-04-21 22:22:05,348 [Worker-18: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2019-04-21 22:22:05,349 [Worker-18: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-04-21 22:22:14,545 [Worker-11: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2019-04-21 22:22:14,554 [Worker-11: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-04-21 22:22:14,556 [Worker-11: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2019-04-21 22:22:14,558 [Worker-11: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-04-21 22:22:19,725 [Worker-19: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2019-04-21 22:22:19,727 [Worker-19: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-04-21 22:22:19,730 [Worker-19: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2019-04-21 22:22:19,732 [Worker-19: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-04-21 22:22:36,155 [Worker-20: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2019-04-21 22:22:36,156 [Worker-20: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-04-21 22:22:36,166 [Worker-20: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2019-04-21 22:22:36,168 [Worker-20: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-04-21 22:25:30,279 [Worker-22: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2019-04-21 22:25:30,280 [Worker-22: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-04-21 22:25:30,285 [Worker-22: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2019-04-21 22:25:30,286 [Worker-22: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-04-21 22:25:46,036 [Worker-19: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2019-04-21 22:25:46,037 [Worker-19: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-04-21 22:25:46,043 [Worker-19: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2019-04-21 22:25:46,044 [Worker-19: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-04-21 22:26:04,734 [Worker-23: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2019-04-21 22:26:04,736 [Worker-23: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-04-21 22:26:04,742 [Worker-23: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2019-04-21 22:26:04,743 [Worker-23: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-04-21 22:26:10,375 [Worker-23: Launching xiaoming-security-demo - DemoApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/xiaoming-security-browser: com.xiaoming.security:xiaoming-security-browser:1.0.0-SNAPSHOT with classifier null to /xiaoming-security-browser/target/classes
+2019-04-21 22:26:10,375 [Worker-23: Launching xiaoming-security-demo - DemoApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/xiaoming-security-core: com.xiaoming.security:xiaoming-security-core:1.0.0-SNAPSHOT with classifier null to /xiaoming-security-core/target/classes
+2019-04-21 22:27:38,801 [Worker-18: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2019-04-21 22:27:38,805 [Worker-18: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-04-21 22:27:38,813 [Worker-18: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2019-04-21 22:27:38,815 [Worker-18: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-04-21 22:27:55,460 [Worker-19: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2019-04-21 22:27:55,462 [Worker-19: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-04-21 22:27:55,468 [Worker-19: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2019-04-21 22:27:55,471 [Worker-19: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-04-21 22:28:38,301 [Worker-22: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2019-04-21 22:28:38,313 [Worker-22: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2019-04-21 22:28:38,315 [Worker-22: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2019-04-21 22:28:38,317 [Worker-22: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-04-21 22:29:20,919 [Worker-24: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2019-04-21 22:29:20,921 [Worker-24: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2019-04-21 22:29:20,923 [Worker-24: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2019-04-21 22:29:20,925 [Worker-24: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-04-21 22:32:17,334 [Worker-25: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2019-04-21 22:32:17,336 [Worker-25: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2019-04-21 22:32:17,338 [Worker-25: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2019-04-21 22:32:17,340 [Worker-25: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-04-21 22:33:40,282 [Worker-24: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2019-04-21 22:33:40,284 [Worker-24: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2019-04-21 22:33:40,287 [Worker-24: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2019-04-21 22:33:40,288 [Worker-24: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-04-21 22:33:51,890 [Worker-23: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2019-04-21 22:33:51,891 [Worker-23: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2019-04-21 22:33:51,893 [Worker-23: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2019-04-21 22:33:51,895 [Worker-23: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-04-21 22:37:26,881 [Worker-18: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2019-04-21 22:37:26,883 [Worker-18: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2019-04-21 22:37:26,886 [Worker-18: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2019-04-21 22:37:26,887 [Worker-18: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-04-21 22:39:05,186 [Worker-18: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2019-04-21 22:39:05,189 [Worker-18: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2019-04-21 22:39:05,193 [Worker-18: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2019-04-21 22:39:05,195 [Worker-18: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-04-21 22:39:14,462 [Worker-25: Launching xiaoming-security-demo - DemoApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/xiaoming-security-browser: com.xiaoming.security:xiaoming-security-browser:1.0.0-SNAPSHOT with classifier null to /xiaoming-security-browser/target/classes
+2019-04-21 22:39:14,462 [Worker-25: Launching xiaoming-security-demo - DemoApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/xiaoming-security-core: com.xiaoming.security:xiaoming-security-core:1.0.0-SNAPSHOT with classifier null to /xiaoming-security-core/target/classes
+2019-04-21 22:40:05,188 [Worker-18: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2019-04-21 22:40:05,190 [Worker-18: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2019-04-21 22:40:05,192 [Worker-18: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2019-04-21 22:40:05,193 [Worker-18: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-04-21 22:40:13,901 [Worker-19: Launching xiaoming-security-demo - DemoApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/xiaoming-security-browser: com.xiaoming.security:xiaoming-security-browser:1.0.0-SNAPSHOT with classifier null to /xiaoming-security-browser/target/classes
+2019-04-21 22:40:13,901 [Worker-19: Launching xiaoming-security-demo - DemoApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/xiaoming-security-core: com.xiaoming.security:xiaoming-security-core:1.0.0-SNAPSHOT with classifier null to /xiaoming-security-core/target/classes
+2019-04-21 22:45:32,627 [Worker-23: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2019-04-21 22:45:32,629 [Worker-23: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2019-04-21 22:45:32,633 [Worker-23: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2019-04-21 22:45:32,635 [Worker-23: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-04-21 22:45:45,152 [Worker-23: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2019-04-21 22:45:45,156 [Worker-23: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2019-04-21 22:45:45,158 [Worker-23: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2019-04-21 22:45:45,159 [Worker-23: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-04-21 22:46:49,360 [Worker-22: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2019-04-21 22:46:49,362 [Worker-22: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2019-04-21 22:46:49,364 [Worker-22: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2019-04-21 22:46:49,365 [Worker-22: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-04-21 22:50:32,160 [Worker-29: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2019-04-21 22:50:32,162 [Worker-29: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2019-04-21 22:50:32,164 [Worker-29: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2019-04-21 22:50:32,165 [Worker-29: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-04-21 22:50:57,077 [Worker-23: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2019-04-21 22:50:57,081 [Worker-23: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2019-04-21 22:50:57,083 [Worker-23: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2019-04-21 22:50:57,084 [Worker-23: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-04-21 22:51:15,805 [Worker-30: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2019-04-21 22:51:15,807 [Worker-30: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2019-04-21 22:51:15,809 [Worker-30: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2019-04-21 22:51:15,810 [Worker-30: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-04-21 22:51:44,910 [Worker-28: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2019-04-21 22:51:44,912 [Worker-28: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2019-04-21 22:51:44,914 [Worker-28: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2019-04-21 22:51:44,916 [Worker-28: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-04-21 22:51:48,323 [Worker-22: Launching xiaoming-security-demo - DemoApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/xiaoming-security-browser: com.xiaoming.security:xiaoming-security-browser:1.0.0-SNAPSHOT with classifier null to /xiaoming-security-browser/target/classes
+2019-04-21 22:51:48,323 [Worker-22: Launching xiaoming-security-demo - DemoApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/xiaoming-security-core: com.xiaoming.security:xiaoming-security-core:1.0.0-SNAPSHOT with classifier null to /xiaoming-security-core/target/classes
+2019-04-21 22:55:25,296 [Worker-33: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2019-04-21 22:55:25,298 [Worker-33: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2019-04-21 22:55:25,300 [Worker-33: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2019-04-21 22:55:25,302 [Worker-33: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-04-21 22:55:49,742 [Worker-28: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2019-04-21 22:55:49,744 [Worker-28: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2019-04-21 22:55:49,746 [Worker-28: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2019-04-21 22:55:49,748 [Worker-28: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-04-21 22:56:03,412 [Worker-23: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2019-04-21 22:56:03,414 [Worker-23: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2019-04-21 22:56:03,416 [Worker-23: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2019-04-21 22:56:03,418 [Worker-23: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-04-21 23:01:23,257 [Worker-33: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2019-04-21 23:01:23,260 [Worker-33: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2019-04-21 23:01:23,262 [Worker-33: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2019-04-21 23:01:23,263 [Worker-33: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-04-21 23:01:43,100 [Worker-33: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2019-04-21 23:01:43,103 [Worker-33: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2019-04-21 23:01:43,106 [Worker-33: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (GBK actually) to copy filtered resources, i.e. build is platform dependent!
+2019-04-21 23:01:43,108 [Worker-33: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-04-21 23:01:58,331 [Worker-23: Launching xiaoming-security-demo - DemoApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/xiaoming-security-browser: com.xiaoming.security:xiaoming-security-browser:1.0.0-SNAPSHOT with classifier null to /xiaoming-security-browser/target/classes
+2019-04-21 23:01:58,332 [Worker-23: Launching xiaoming-security-demo - DemoApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/xiaoming-security-core: com.xiaoming.security:xiaoming-security-core:1.0.0-SNAPSHOT with classifier null to /xiaoming-security-core/target/classes

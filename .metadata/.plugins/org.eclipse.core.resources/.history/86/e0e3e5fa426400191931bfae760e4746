@@ -1,0 +1,9 @@
+package com.xiaoming.web.controller;
+/**
+ * 控制器错误处理器
+ * @author 江小明
+ *
+ */
+public class ControllerExceptionHandler {
+
+}

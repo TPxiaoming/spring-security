@@ -7,7 +7,6 @@
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.GetMapping"/>
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PostMapping"/>
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestBody"/>
-<fullyQualifiedTypeName name="java.util.Date"/>
 <fullyQualifiedTypeName name="org.hibernate.validator.constraints.NotBlank"/>
 <fullyQualifiedTypeName name="javax.validation.Valid"/>
 <fullyQualifiedTypeName name="org.springframework.validation.BindingResult"/>
@@ -30,4 +29,21 @@
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.DeleteMapping"/>
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PathVariable"/>
 <fullyQualifiedTypeName name="org.junit.Test"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ControllerAdvice"/>
+<fullyQualifiedTypeName name="java.util.Map"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ExceptionHandler"/>
+<fullyQualifiedTypeName name="org.apache.commons.collections.map.HashedMap"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ResponseBody"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ResponseStatus"/>
+<fullyQualifiedTypeName name="org.springframework.http.HttpStatus"/>
+<fullyQualifiedTypeName name="com.xiaoming.exception.UserNotExistException"/>
+<fullyQualifiedTypeName name="java.util.Date"/>
+<fullyQualifiedTypeName name="org.springframework.stereotype.Component"/>
+<fullyQualifiedTypeName name="org.springframework.context.annotation.Configuration"/>
+<fullyQualifiedTypeName name="org.springframework.context.annotation.Bean"/>
+<fullyQualifiedTypeName name="javax.servlet.FilterRegistration"/>
+<fullyQualifiedTypeName name="org.springframework.boot.web.servlet.FilterRegistrationBean"/>
+<fullyQualifiedTypeName name="com.xiaoming.web.filter.TimeFilter"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
 </qualifiedTypeNameHistroy>

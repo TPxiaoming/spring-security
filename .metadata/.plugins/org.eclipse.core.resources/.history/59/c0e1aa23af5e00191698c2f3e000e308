@@ -1,5 +1,0 @@
-package com.xiaoming.dto;
-
-public class UserQueryCondition {
-
-}
