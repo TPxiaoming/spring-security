@@ -1,0 +1,5 @@
+package com.xiaoming.web.controller;
+
+public class FileController {
+
+}
