@@ -27,6 +27,31 @@
      	<groupId>commons-io</groupId>
      	<artifactId>commons-io</artifactId>
      </dependency>
+     
+     <!-- https://mvnrepository.com/artifact/io.springfox/springfox-swagger2 -->
+	<dependency>
+	    <groupId>io.springfox</groupId>
+	    <artifactId>springfox-swagger2</artifactId>
+	    <version>2.9.2</version>
+	</dependency>
+	
+	<!-- swagger-ui -->
+	<dependency>
+	 <groupId>io.springfox</groupId>
+	 <artifactId>springfox-swagger-ui</artifactId>
+	 <version>2.9.2</version>
+	</dependency>
+	
+	<!-- wiremock -->
+	<dependency>
+        <groupId>com.github.tomakehurst</groupId>
+        <artifactId>wiremock</artifactId>
+	</dependency>
+	<dependency>
+		<groupId>org.apache.httpcomponents</groupId>
+		<artifactId>httpmime</artifactId>
+	</dependency>
+     
   </dependencies>
   
   <build>

@@ -1,0 +1,5 @@
+package com.xiaoming.web.wiremock;
+
+public class MockServer {
+
+}

@@ -1,0 +1,49 @@
+package com.xiaoming.web.async;
+
+import java.util.concurrent.Callable;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+/**
+ * 异步处理控制器
+ * @author 江小明
+ *
+ */
+@RestController
+public class AsyncController {
+
+	private Logger logger = LoggerFactory.getLogger(AsyncController.class);
+	
+	/**
+	 * 同步处理
+	 * @return
+	 * @throws InterruptedException
+	 */
+	@RequestMapping("/order")
+	public String order() throws InterruptedException {
+		logger.info("主线程开始");
+		Thread.sleep(1000);//模拟执行下单逻辑
+		logger.info("主线程返回");
+		return "success";
+	}
+	
+	@RequestMapping("/asyncorder")
+	public Callable<String> asyncorder() throws InterruptedException {
+		logger.info("主线程开始");
+		Callable<String> result = new Callable<String>() {
+			@Override
+			public String call() throws Exception {
+				logger.info("副线程开始");
+				Thread.sleep(1000);//模拟执行下单逻辑 主线程不会等待这个时间
+				logger.info("副线程返回");
+				return "success";
+				
+			}
+		};
+		logger.info("主线程返回");
+		return result;
+	}
+}

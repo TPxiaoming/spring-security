@@ -23,11 +23,11 @@ public class WebConfig extends WebMvcConfigurerAdapter{
 	
 	@Override
 	public void addInterceptors(InterceptorRegistry registry) {
-		registry.addInterceptor(interceptor);
+//		registry.addInterceptor(interceptor);
 	}
 
 	//将timeFilter加到过滤器链上 和在timeFilter上加Component注解是一样的
-	@Bean
+//	@Bean
 	public FilterRegistrationBean timeFilter() {
 		FilterRegistrationBean registrationBean = new FilterRegistrationBean();
 		

@@ -29,6 +29,9 @@ import com.xiaoming.dto.User;
 import com.xiaoming.dto.UserQueryCondition;
 import com.xiaoming.exception.UserNotExistException;
 
+import io.swagger.annotations.ApiOperation;
+import io.swagger.annotations.ApiParam;
+
 /**
  * @author 江小明
  *
@@ -83,6 +86,7 @@ public class UserController {
 //	@RequestMapping(value = "/user", method = RequestMethod.GET)
 	@GetMapping
 	@JsonView(User.UserSimpleView.class)
+	@ApiOperation(value = "用户查询服务")
 	public List<User> query(UserQueryCondition userQueryCondition,
 			@PageableDefault(page = 2, size = 17, sort = "username,asc") Pageable pageable) {
 		System.out.println(ReflectionToStringBuilder.toString(userQueryCondition, ToStringStyle.MULTI_LINE_STYLE));
@@ -101,7 +105,7 @@ public class UserController {
 //	@RequestMapping(value = "/user/{id:\\d+}", method = RequestMethod.GET)
 	@GetMapping("/{id:\\d+}")
 	@JsonView(User.UserDetailView.class)
-	public User getInfo(@PathVariable(name = "id") String id) {
+	public User getInfo(@ApiParam(value = "用户id") @PathVariable(name = "id") String id) {
 		System.out.println("进入getInfo服务");
 		User user = new User();
 		user.setUsername("tom");

@@ -1,0 +1,19 @@
+package com.xiaoming.web.async;
+
+import java.util.HashMap;
+import java.util.Map;
+
+
+@Component
+public class DeferredResultHolder {
+
+	
+	//key:订单号,value:订单处理结果
+	   private Map<String, org.springframework.web.context.request.async.DeferredResult<String>> map = new HashMap()<String, DeferredResult<String>>();
+	   public Map<String, org.springframework.web.context.request.async.DeferredResult<String>> getMap() {
+	      return map;
+	   }
+	   public void setMap(Map<String, org.springframework.web.context.request.async.DeferredResult<String>> map) {
+	      this.map = map;
+	   }
+}
