@@ -1,0 +1,9 @@
+package com.xiaoming.core.properties;
+
+import org.springframework.boot.context.properties.ConfigurationProperties;
+
+@ConfigurationProperties(prefix = "com.xiaoming")	//会读取所有以com.xiaoming开头的配置项
+public class SecurityProperties {
+
+	private BrowserProperties browserProperties = new BrowserProperties();
+}

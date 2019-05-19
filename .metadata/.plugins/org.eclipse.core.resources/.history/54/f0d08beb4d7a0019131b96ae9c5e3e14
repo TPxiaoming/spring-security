@@ -1,0 +1,5 @@
+package com.xiaoming.core.properties;
+
+public class SecurityProperties {
+
+}

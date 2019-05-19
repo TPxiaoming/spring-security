@@ -1,0 +1,5 @@
+package com.xiaoming.browser;
+
+public class MyUserDetailsService extends RuntimeException {
+
+}
