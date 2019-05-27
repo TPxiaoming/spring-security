@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <typeInfoHistroy>
 <typeInfo handle="=xiaoming-security-demo/D:\/eclipse\/repository\/javax\/validation\/validation-api\/1.1.0.Final\/validation-api-1.1.0.Final.jar&lt;javax.validation(ConstraintValidator.class[ConstraintValidator" modifiers="1537" timestamp="1555239257241"/>
-<typeInfo handle="=xiaoming-security-demo/D:\/Program Files\/java\/jdk\/jre\/lib\/rt.jar&lt;java.lang(RuntimeException.class[RuntimeException" modifiers="33" timestamp="1545713341584"/>
 <typeInfo handle="=xiaoming-security-demo/D:\/eclipse\/repository\/org\/apache\/tomcat\/embed\/tomcat-embed-core\/8.5.39\/tomcat-embed-core-8.5.39.jar&lt;javax.servlet(Filter.class[Filter" modifiers="1537" timestamp="1555239253637"/>
 <typeInfo handle="=xiaoming-security-demo/D:\/eclipse\/repository\/org\/springframework\/spring-webmvc\/4.3.23.RELEASE\/spring-webmvc-4.3.23.RELEASE.jar&lt;org.springframework.web.servlet(HandlerInterceptor.class[HandlerInterceptor" modifiers="1537" timestamp="1555239291400"/>
+<typeInfo handle="=xiaoming-security-browser/D:\/eclipse\/repository\/org\/springframework\/security\/spring-security-config\/4.2.12.RELEASE\/spring-security-config-4.2.12.RELEASE.jar&lt;org.springframework.security.config.annotation.authentication.configurers.userdetails(UserDetailsServiceConfigurer.class[UserDetailsServiceConfigurer" modifiers="33" timestamp="1555239263579"/>
+<typeInfo handle="=xiaoming-security-demo/D:\/Program Files\/java\/jdk\/jre\/lib\/rt.jar&lt;java.lang(RuntimeException.class[RuntimeException" modifiers="33" timestamp="1545713341584"/>
+<typeInfo handle="=xiaoming-security-browser/D:\/eclipse\/repository\/org\/springframework\/security\/spring-security-web\/4.2.12.RELEASE\/spring-security-web-4.2.12.RELEASE.jar&lt;org.springframework.security.web.authentication(AuthenticationSuccessHandler.class[AuthenticationSuccessHandler" modifiers="1537" timestamp="1555239292548"/>
+<typeInfo handle="=xiaoming-security-browser/D:\/eclipse\/repository\/mysql\/mysql-connector-java\/5.1.47\/mysql-connector-java-5.1.47.jar&lt;com.mysql.jdbc(AuthenticationPlugin.class[AuthenticationPlugin" modifiers="1537" timestamp="1555239287814"/>
+<typeInfo handle="=xiaoming-security-browser/D:\/eclipse\/repository\/org\/springframework\/security\/spring-security-web\/4.2.12.RELEASE\/spring-security-web-4.2.12.RELEASE.jar&lt;org.springframework.security.web.authentication(AuthenticationFailureHandler.class[AuthenticationFailureHandler" modifiers="1537" timestamp="1555239292548"/>
 </typeInfoHistroy>

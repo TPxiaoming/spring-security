@@ -5,14 +5,26 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 @ConfigurationProperties(prefix = "xiaoming.security")	//会读取所有以com.xiaoming开头的配置项
 public class SecurityProperties {
 
-	private BrowserProperties browserProperties = new BrowserProperties();
+	private BrowserProperties browser = new BrowserProperties();
+	
+	private ValidateCodeProperties code = new ValidateCodeProperties();
 
-	public BrowserProperties getBrowserProperties() {
-		return browserProperties;
+	public BrowserProperties getBrowser() {
+		return browser;
 	}
 
-	public void setBrowserProperties(BrowserProperties browserProperties) {
-		this.browserProperties = browserProperties;
+	public void setBrowser(BrowserProperties browser) {
+		this.browser = browser;
 	}
+
+	public ValidateCodeProperties getCode() {
+		return code;
+	}
+
+	public void setCode(ValidateCodeProperties code) {
+		this.code = code;
+	}
+
+	
 	
 }

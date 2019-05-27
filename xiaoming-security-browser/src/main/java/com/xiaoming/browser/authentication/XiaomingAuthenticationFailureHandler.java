@@ -1,0 +1,54 @@
+package com.xiaoming.browser.authentication;
+
+import java.io.IOException;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.security.core.AuthenticationException;
+import org.springframework.security.web.authentication.AuthenticationFailureHandler;
+import org.springframework.security.web.authentication.SimpleUrlAuthenticationFailureHandler;
+import org.springframework.stereotype.Component;
+
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.xiaoming.browser.support.SimpleResponse;
+import com.xiaoming.core.properties.LoginType;
+import com.xiaoming.core.properties.SecurityProperties;
+
+@Component("xmAuthenticationFailureHandler") //声明为spring的组件
+public class XiaomingAuthenticationFailureHandler extends SimpleUrlAuthenticationFailureHandler {
+
+	private Logger log = LoggerFactory.getLogger(XiaomingAuthenticationFailureHandler.class);
+	
+	@Autowired
+	private ObjectMapper objectMapper;  //springMvc启动的时候会注入一个ObjectMapper
+	
+	@Autowired
+    private SecurityProperties securityProperties;
+
+	
+	/**
+	 * 登录失败之后会被调用
+	 */
+	@Override
+	public void onAuthenticationFailure(HttpServletRequest request, HttpServletResponse response,
+			AuthenticationException exception) throws IOException, ServletException {
+		log.info("登录失败");
+		//如果是JSON，调用我们的失败处理  在配置文件中可以决定是那种方式
+        if (LoginType.JSON.equals(securityProperties.getBrowser().getLoginType())){
+            response.setStatus(HttpStatus.INTERNAL_SERVER_ERROR.value());
+            response.setContentType("application/json;charset=UTF-8");
+            response.getWriter().write(objectMapper.writeValueAsString(new SimpleResponse(exception.getMessage())));
+        }else{
+            //否则调用父类的失败处理，即springBoot默认的失败处理
+            super.onAuthenticationFailure(request, response, exception);
+            return;
+        }
+	}
+
+}

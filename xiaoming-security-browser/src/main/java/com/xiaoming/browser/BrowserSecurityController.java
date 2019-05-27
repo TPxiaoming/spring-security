@@ -48,7 +48,7 @@ public class BrowserSecurityController {
 			//如果请求以html结尾
 			if (StringUtils.endsWithIgnoreCase(targetUrl, ".html")) {
 				//跳到自己写的登录页
-				redirectStrategy.sendRedirect(request, response, securityProperties.getBrowserProperties().getLoginPage());
+				redirectStrategy.sendRedirect(request, response, securityProperties.getBrowser().getLoginPage());
 			}
 		}
 		return new SimpleResponse("访问的服务需要身份认证，请引导用户到登录页");

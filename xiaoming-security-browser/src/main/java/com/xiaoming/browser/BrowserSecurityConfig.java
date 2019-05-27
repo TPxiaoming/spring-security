@@ -8,8 +8,11 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.authentication.AuthenticationSuccessHandler;
+import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
+import com.xiaoming.browser.authentication.XiaomingAuthenticationFailureHandler;
 import com.xiaoming.core.properties.SecurityProperties;
+import com.xiaoming.core.validate.code.ValidateCodeFilter;
 @Configuration
 public class BrowserSecurityConfig extends WebSecurityConfigurerAdapter{
 	@Autowired
@@ -17,17 +20,28 @@ public class BrowserSecurityConfig extends WebSecurityConfigurerAdapter{
 	
 	@Autowired
 	private AuthenticationSuccessHandler xmAuthenticationSuccessHandler;
+	@Autowired
+	private XiaomingAuthenticationFailureHandler xmAuthenticationFailureHandler;
+	 
 
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
-		http.formLogin()	//表单登录
+		ValidateCodeFilter validateCodeFilter = new ValidateCodeFilter();
+		validateCodeFilter.setAuthenticationFailureHandler(xmAuthenticationFailureHandler);
+		validateCodeFilter.setSecurityProperties(securityProperties);
+		validateCodeFilter.afterPropertiesSet();
+		
+		http.addFilterBefore(validateCodeFilter, UsernamePasswordAuthenticationFilter.class)
+			.formLogin()	//表单登录
 			.loginPage("/authentication/require") 	//自定义登录页面
 			.loginProcessingUrl("/authentication/form")
 			.successHandler(xmAuthenticationSuccessHandler)	//自定义成功处理
+			.failureHandler(xmAuthenticationFailureHandler) //自定义失败处理
 			.and()
 			.authorizeRequests()	//授权
 			.antMatchers("/authentication/require",
-					securityProperties.getBrowserProperties().getLoginPage()).permitAll()	//这个页面不需要身份认证
+					securityProperties.getBrowser().getLoginPage(),
+					"/code/image").permitAll()	//这个页面不需要身份认证
 			.anyRequest()	//任何请求
 			.authenticated()	//需要认证
 			.and()

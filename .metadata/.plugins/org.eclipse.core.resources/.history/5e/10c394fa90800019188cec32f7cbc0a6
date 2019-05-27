@@ -1,0 +1,16 @@
+package com.xiaoming.code;
+
+import org.springframework.web.context.request.ServletWebRequest;
+
+import com.xiaoming.core.validate.code.ImageCode;
+import com.xiaoming.core.validate.code.ValidateCodeGenerator;
+
+public class DemoImageCodeGenerator implements ValidateCodeGenerator {
+
+	@Override
+	public ImageCode generator(ServletWebRequest request) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}
