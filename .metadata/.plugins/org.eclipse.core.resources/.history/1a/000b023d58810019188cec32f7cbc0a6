@@ -1,0 +1,15 @@
+package com.xiaoming.core.validate.code.image;
+
+import org.springframework.web.context.request.ServletWebRequest;
+
+import com.xiaoming.core.validate.code.impl.AbstractValidateCodeProcessor;
+
+public class ImageCodeProcesser extends AbstractValidateCodeProcessor<ImageCode> {
+
+	@Override
+	protected void send(ServletWebRequest request, ImageCode validateCode) throws Exception {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

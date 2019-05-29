@@ -1,0 +1,39 @@
+package com.xiaoming.core.validate.code.image;
+
+import java.awt.image.BufferedImage;
+import java.time.LocalDateTime;
+
+import com.xiaoming.core.validate.code.ValidateCode;
+/**
+ * 	图片验证码
+ * @author 江小明
+ *
+ */
+public class ImageCode extends ValidateCode{
+
+    private BufferedImage image;//图片
+
+    /**
+     * @param image
+     * @param code
+     * @param expireIn 过期时间 秒数
+     */
+    public ImageCode(BufferedImage image, String code, int expireIn) {
+    	super(code, expireIn);
+        this.image = image;
+    }
+
+    public ImageCode(BufferedImage image, String code, LocalDateTime expireTime) {
+    	super(code, expireTime);
+        this.image = image;
+    }
+
+    public BufferedImage getImage() {
+        return image;
+    }
+
+    public void setImage(BufferedImage image) {
+        this.image = image;
+    }
+
+}

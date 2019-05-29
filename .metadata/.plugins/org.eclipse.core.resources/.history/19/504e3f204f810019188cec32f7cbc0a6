@@ -1,0 +1,5 @@
+package com.xiaoming.core.validate.code.sms;
+
+public interface SmsCodeSender {
+
+}

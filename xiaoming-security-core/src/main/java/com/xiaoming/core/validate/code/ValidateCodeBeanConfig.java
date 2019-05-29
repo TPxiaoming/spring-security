@@ -6,6 +6,9 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 import com.xiaoming.core.properties.SecurityProperties;
+import com.xiaoming.core.validate.code.image.ImageCodeGenerator;
+import com.xiaoming.core.validate.code.sms.DefaultSmsCodeSender;
+import com.xiaoming.core.validate.code.sms.SmsCodeSender;
 
 @Configuration
 public class ValidateCodeBeanConfig {
@@ -19,5 +22,13 @@ public class ValidateCodeBeanConfig {
 		ImageCodeGenerator imageCodeGenerator = new ImageCodeGenerator();
 		imageCodeGenerator.setSecurityProperties(securityProperties);
 		return imageCodeGenerator;
+	}
+	
+	@Bean
+//	@ConditionalOnMissingBean(name = "smsCodeSender") //先去spring容器中找smsCodeSender
+	@ConditionalOnMissingBean(SmsCodeSender.class)	//第二种写法
+	public SmsCodeSender smsCodeSender() {
+		
+		return new DefaultSmsCodeSender();
 	}
 }

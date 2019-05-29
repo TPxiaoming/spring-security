@@ -3,9 +3,9 @@ package com.xiaoming.code;
 import org.springframework.stereotype.Component;
 import org.springframework.web.context.request.ServletWebRequest;
 
-import com.xiaoming.core.validate.code.ImageCode;
 import com.xiaoming.core.validate.code.ValidateCodeGenerator;
-@Component("imageCodeGenerator")
+import com.xiaoming.core.validate.code.image.ImageCode;
+//@Component("imageCodeGenerator")
 public class DemoImageCodeGenerator implements ValidateCodeGenerator {
 
 	@Override

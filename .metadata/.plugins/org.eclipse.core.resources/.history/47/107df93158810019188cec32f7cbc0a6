@@ -1,0 +1,7 @@
+package com.xiaoming.core.validate.code.image;
+
+import com.xiaoming.core.validate.code.impl.AbstractValidateCodeProcessor;
+
+public class ImageCodeProcesser extends AbstractValidateCodeProcessor<C> {
+
+}

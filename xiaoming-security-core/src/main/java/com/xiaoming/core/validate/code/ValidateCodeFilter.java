@@ -13,6 +13,7 @@ import org.springframework.web.context.request.ServletWebRequest;
 import org.springframework.web.filter.OncePerRequestFilter;
 
 import com.xiaoming.core.properties.SecurityProperties;
+import com.xiaoming.core.validate.code.image.ImageCode;
 
 import javax.servlet.FilterChain;
 import javax.servlet.ServletException;
