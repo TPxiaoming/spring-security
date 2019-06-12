@@ -2,6 +2,8 @@ package com.xiaoming.browser;
 
 import javax.sql.DataSource;
 
+import com.xiaoming.core.validate.code.SmsCodeFilter;
+import com.xiaoming.core.validate.code.authentication.mobile.SmsCodeAuthenticationSecurityConfig;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -18,6 +20,8 @@ import org.springframework.security.web.authentication.rememberme.PersistentToke
 import com.xiaoming.browser.authentication.XiaomingAuthenticationFailureHandler;
 import com.xiaoming.core.properties.SecurityProperties;
 import com.xiaoming.core.validate.code.ValidateCodeFilter;
+import org.springframework.social.security.SpringSocialConfigurer;
+
 @Configuration
 public class BrowserSecurityConfig extends WebSecurityConfigurerAdapter{
 	
@@ -35,6 +39,12 @@ public class BrowserSecurityConfig extends WebSecurityConfigurerAdapter{
 	
 	@Autowired
 	private UserDetailsService userDetailsService;
+
+	@Autowired
+	private SmsCodeAuthenticationSecurityConfig smsCodeAuthenticationSecurityConfig;
+
+	@Autowired
+	private SpringSocialConfigurer xmSocialSecurityConfig;
 	
 	/**
 	 * 请记住我配置
@@ -59,8 +69,15 @@ public class BrowserSecurityConfig extends WebSecurityConfigurerAdapter{
 		validateCodeFilter.setAuthenticationFailureHandler(xmAuthenticationFailureHandler);
 		validateCodeFilter.setSecurityProperties(securityProperties);
 		validateCodeFilter.afterPropertiesSet();
+
+
+		SmsCodeFilter smsCodeFilter = new SmsCodeFilter();
+		smsCodeFilter.setAuthenticationFailureHandler(xmAuthenticationFailureHandler);
+		smsCodeFilter.setSecurityProperties(securityProperties);
+		smsCodeFilter.afterPropertiesSet();
 		
-		http.addFilterBefore(validateCodeFilter, UsernamePasswordAuthenticationFilter.class)
+		http.addFilterBefore(smsCodeFilter, UsernamePasswordAuthenticationFilter.class)
+			.addFilterBefore(validateCodeFilter, UsernamePasswordAuthenticationFilter.class)
 			.formLogin()	//表单登录
 			.loginPage("/authentication/require") 	//自定义登录页面
 			.loginProcessingUrl("/authentication/form")
@@ -73,14 +90,16 @@ public class BrowserSecurityConfig extends WebSecurityConfigurerAdapter{
 			.userDetailsService(userDetailsService)	//用户信息
 			.and()
 			.authorizeRequests()	//授权
-			.antMatchers("/authentication/require",
+			.antMatchers("/authentication/require","/authentication/mobile",
 					securityProperties.getBrowser().getLoginPage(),
 					"/code/*").permitAll()	//这个页面不需要身份认证
 			.anyRequest()	//任何请求
 			.authenticated()	//需要认证
 			.and()
-			.csrf().disable();	//跨站伪造请求
-		
+			.csrf().disable()	//跨站伪造请求
+			.apply(smsCodeAuthenticationSecurityConfig)
+			.and()
+			.apply(xmSocialSecurityConfig);
 	}
 	
 	@Bean

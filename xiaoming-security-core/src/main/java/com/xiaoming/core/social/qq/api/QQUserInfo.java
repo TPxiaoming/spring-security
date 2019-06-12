@@ -9,6 +9,9 @@ public class QQUserInfo {
      * 	如果ret<0，会有相应的错误信息提示，返回数据全部用UTF-8编码。
      */
     private String msg;
+
+    private String openId;
+
     /**
      * 	用户在QQ空间的昵称。
      */
@@ -37,6 +40,31 @@ public class QQUserInfo {
      * 	性别。 如果获取不到则默认返回"男"
      */
     private String gender;
+
+    /**
+     *  标识用户是否为黄钻用户（0：不是；1：是）
+     */
+    private String is_yellow_vip;
+
+    /**
+     *  标识用户是否为vip用户（0：不是；1：是）
+     */
+    private String vip;
+
+    /**
+     *  黄钻等级
+     */
+    private String yellow_vip_level;
+
+    /**
+     *  vip等级
+     */
+    private String level;
+
+    /**
+     *  标识用户是否为年费黄钻用户（0：不是；1：是）
+     */
+    private String is_yellow_year_vip;
 
     public String getRet() {
         return ret;
@@ -108,5 +136,53 @@ public class QQUserInfo {
 
     public void setGender(String gender) {
         this.gender = gender;
+    }
+
+    public String getOpenId() {
+        return openId;
+    }
+
+    public void setOpenId(String openId) {
+        this.openId = openId;
+    }
+
+    public String getIs_yellow_vip() {
+        return is_yellow_vip;
+    }
+
+    public void setIs_yellow_vip(String is_yellow_vip) {
+        this.is_yellow_vip = is_yellow_vip;
+    }
+
+    public String getVip() {
+        return vip;
+    }
+
+    public void setVip(String vip) {
+        this.vip = vip;
+    }
+
+    public String getYellow_vip_level() {
+        return yellow_vip_level;
+    }
+
+    public void setYellow_vip_level(String yellow_vip_level) {
+        this.yellow_vip_level = yellow_vip_level;
+    }
+
+    public String getLevel() {
+        return level;
+    }
+
+    public void setLevel(String level) {
+        this.level = level;
+    }
+
+    public String getIs_yellow_year_vip() {
+        return is_yellow_year_vip;
+    }
+
+    public void setIs_yellow_year_vip(String is_yellow_year_vip) {
+        this.is_yellow_year_vip = is_yellow_year_vip;
     }
 }
